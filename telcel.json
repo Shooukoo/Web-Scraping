@@ -1,66 +1,98 @@
 [
   {
     "description": "Galaxy Z Flip7",
-    "price": "$\n25,499.00\n$28,499.00"
+    "price": "$\n25,499.00\n$28,499.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-SamsungZFlip7NegroFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wyMjIzM3xpbWFnZS9qcGVnfGltYWdlcy9oZDgvaDBjLzkxNjUzNDI1MDcwMzguanBnfDk5Zjk3NTQ4OTY2ODk1M2RiZmM4ZTE3ZjdkZDI4MDMzYmZmMzA4NWU5ZTIwNDU0MjM2Y2JhNmI2NjEyOGQzMTU",
+    "model": "SAMSUNG | SM-F766B"
   },
   {
     "description": "iPhone 16e",
-    "price": "$\n13,999.00\n$14,999.00"
+    "price": "$\n13,999.00\n$14,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16e-BlackDual.jpeg?context=bWFzdGVyfGltYWdlc3wyNDE3NHxpbWFnZS9qcGVnfGltYWdlcy9oODIvaDc1LzkxMjQzNjU2MzE1MTguanBnfDQxYmM0MmE1MDQyMDY4M2Y2Yjg5N2Q2MTVmMTAyYjI1ZDI5ZDIzNGNmOGVlY2Q0ZjQwNmNhNzUxYTU4MTA2MTU",
+    "model": "APPLE | 16E 128"
   },
   {
     "description": "Axon 60 Lite",
-    "price": "$\n1,799.00\n$2,999.00"
+    "price": "$\n1,799.00\n$2,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-ZTEAxon60LiteMoradoFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wxMDI1MnxpbWFnZS9qcGVnfGltYWdlcy9oNjYvaGZmLzkwNTc1NDk0MTg1MjYuanBnfGJkYWFmODBmMDQ2ZGI4ZDNhMjFiZjcwMWUwNmVjYTE3YTYwZDBjZTEwMDA2ODdlN2Q1ZGJmMDljNjM5YWRjNWE",
+    "model": "ZTE | Z2350"
   },
   {
     "description": "Galaxy A06 5G",
-    "price": "$\n2,299.00\n$2,799.00"
+    "price": "$\n2,299.00\n$2,799.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-SamsungGalaxyA065GVerdeFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wxMzE1MXxpbWFnZS9qcGVnfGltYWdlcy9oMGEvaGNhLzkxNTgzMTcxNDYxNDIuanBnfGUzNDU4YTYxZjg2MTI1ZDgyZjc0OGJjZThjYmY1ZDU2NzZhODQyNmE2MDBkYWNhNDNjNmRkMzA3MGZiZDY4YTU",
+    "model": "SAMSUNG | SM-A066M"
   },
   {
     "description": "Axon 40 SE",
-    "price": "$\n2,099.00\n$5,499.00"
+    "price": "$\n2,099.00\n$5,499.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-ZTE9047BundleAzulFrontal.png?context=bWFzdGVyfGltYWdlc3w2MDcwMXxpbWFnZS9wbmd8aW1hZ2VzL2hiYy9oOTkvOTAyODY0NTgxNDMwMi5wbmd8ZmNkOWM2OTViNjZlNWJjN2FkMWNiMDRiYmJiYWY1NzJhYjRlMTgyNjQ3YzUyNTVhOTZjNTZkZjczYzhiZjhiOQ",
+    "model": "ZTE | 9047"
   },
   {
     "description": "Razr 50",
-    "price": "$\n10,229.00\n$16,999.00"
+    "price": "$\n10,229.00\n$16,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-MotorolaRazr50-Naranja-Frontal.jpeg?context=bWFzdGVyfGltYWdlc3wzODk5NXxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaGE4LzkwNTc1NTkzNzk5OTguanBnfDExNTYwYjkzOTZmYWFhMTljMzgxZjIzYmMwNTAzMmRkYjNlYzM1NGVkNzVkODUwZDk3Yzc4MzY4MGQ2OWMxOGI",
+    "model": "MOTOROLA | XT2453-1"
   },
   {
     "description": "Redmi 12",
-    "price": "$\n3,129.00\n$7,499.00"
+    "price": "$\n3,129.00\n$7,499.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-XiaomiRedmi12AzulFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wyNjY4M3xpbWFnZS9qcGVnfGltYWdlcy9oODUvaDFjLzkwMjg3NDEyMDE5NTAuanBnfDA3ZTI2ZGViNzE2MjMzNjk2OTMwZmE3OGQ0MWE2ZGZkZmNjMzMwNTk1NDNmODFhZTNmZjgyOTVkYzY3ZmZmYWE",
+    "model": "XIAOMI | 23053RN02L"
   },
   {
     "description": "moto edge 60 fusion",
-    "price": "$\n7,499.00\n$8,999.00"
+    "price": "$\n7,499.00\n$8,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-MotorolaEdge60Fusion-Rosa-Frontside.jpeg?context=bWFzdGVyfGltYWdlc3w0MzUyM3xpbWFnZS9qcGVnfGltYWdlcy9oMjEvaGEzLzkxNDI5OTkyMjAyNTQuanBnfDNiMWM2NzdkMWFlYzAyNzU5MWJhOGZmODZjNTkzNjg0N2YwMTIyZGYyMWYzYmVjNmUyZmJjZGI2MmJjNTJjZTk",
+    "model": "MOTOROLA | XT2503-1"
   },
   {
     "description": "Xiaomi 14T",
-    "price": "$\n10,339.00\n$13,999.00"
+    "price": "$\n10,339.00\n$13,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-Xiaomi14TNegroBundle-1-.jpeg?context=bWFzdGVyfGltYWdlc3wzMjU4M3xpbWFnZS9qcGVnfGltYWdlcy9oOTAvaDNmLzkxMTEyNDI4NjY3MTguanBnfDU0NWE0OTc4N2RhMjc5OTc1ZTAyOTA5MzkxNzg2ZWVlNDViMDJkNjk4MTJmYWIyNjQyMTA2NWI4NWFjNzdiM2I",
+    "model": "XIAOMI | 2406APNFAG"
   },
   {
     "description": "Galaxy A56 5G",
-    "price": "$\n7,999.00\n$10,999.00"
+    "price": "$\n7,999.00\n$10,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-SamsungA565GrisFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wyNDE4NnxpbWFnZS9qcGVnfGltYWdlcy9oYWUvaDQ0LzkxNTA0NjY3ODUzMTAuanBnfDE0MjkwNGRmYWIxODk1ZWEwZWUwOGVkMTEzMjdlNThkNDQ1MmVkN2M3NDExYjVlZWI2MGVmZjViYjdlZjM4Yjg",
+    "model": "SAMSUNG | SM-A566E"
   },
   {
     "description": "Focus Pro",
-    "price": "$\n2,899.00\n$5,999.00"
+    "price": "$\n2,899.00\n$5,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-nubiaFocusPro5GBeigeFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wxODg2MHxpbWFnZS9qcGVnfGltYWdlcy9oY2QvaDE2LzkwMjgyMDcwNTA3ODIuanBnfGU3YmM3M2I5YzQ5ZWJiNzk5MjhhYTFjNTMwZDJhMTNjZGJmYTQ4MTAzZWViNzBiMGUzOGM2YzZmZDZiYjMzYjg",
+    "model": "NUBIA | Z2351N"
   },
   {
     "description": "OPPO A58",
-    "price": "$\n3,499.00\n$5,999.00"
+    "price": "$\n3,499.00\n$5,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-OPPOA58BundleVerdeDual.jpeg?context=bWFzdGVyfGltYWdlc3wyNzk5N3xpbWFnZS9qcGVnfGltYWdlcy9oNDgvaGNkLzkwNTc1MzQ3Mzg0NjIuanBnfGE0MTBmNTQ4MTkxY2ZjMWRjZjRmZTIxMDlmMWM3ZjRiNGM2ODZhY2YwZWZiYTFlZDIwMTg4OGU4ZGQ3MTU5NGE",
+    "model": "OPPO | CPH2577256"
   },
   {
     "description": "Galaxy S24 FE",
-    "price": "$\n10,999.00\n$15,499.00"
+    "price": "$\n10,999.00\n$15,499.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-SamsungGalaxyS24FEMentaFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wyNTIzMnxpbWFnZS9qcGVnfGltYWdlcy9oODYvaDA5LzkxNTQ4NjA0ODI1OTAuanBnfDE0MGRjYTYzNzljNWI3ZTMyYjExZjYzZjhkZWU2N2NhYTJlOGQ2Mzg2Y2M3ZDRmNTU0YTUwMzVjOWQxOGI4YTA",
+    "model": "SAMSUNG | SM-S721B"
   },
   {
     "description": "14T Pro",
-    "price": "$\n13,339.00\n$16,999.00"
+    "price": "$\n13,339.00\n$16,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-Xiaomi14TProAzulBundle.jpeg?context=bWFzdGVyfGltYWdlc3wzNDUzMXxpbWFnZS9qcGVnfGltYWdlcy9oN2QvaDUyLzkxMTEyMzg4MzYyNTQuanBnfDNkNTU4ZDZlYjBhNzQxODAyNzA4YTYzMmNhMGQ0OGZlYTA5MWJmZjlkMTJlMTI0MjAzMGI4MzNmMTJkNDExYzY",
+    "model": "XIAOMI | 2407FPN8EG"
   },
   {
     "description": "OPPO Reno10 256GB",
-    "price": "$\n5,499.00\n$9,999.00"
+    "price": "$\n5,499.00\n$9,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-OPPO-Reno105GGrisFrontal.png?context=bWFzdGVyfGltYWdlc3w2MjA4M3xpbWFnZS9wbmd8aW1hZ2VzL2hjNC9oYjEvOTAyODEzMTMyMzkzNC5wbmd8YTNiZGNjMjI5MjRmYzQzMTBjOGVlZDU0MzM3Njk4MzdhYzUwMDQzNGFhMmVmNjAxZWQ2OTc4NTY5OWU5ZTNhNA",
+    "model": "OPPO | CPH2531"
   },
   {
     "description": "iPhone 13 128GB",
-    "price": "$\n10,499.00\n$12,999.00"
+    "price": "$\n10,499.00\n$12,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-APPLEIPHONE132021MIDNIGHTDUAL.png?context=bWFzdGVyfGltYWdlc3w0NzE4M3xpbWFnZS9wbmd8aW1hZ2VzL2gwNS9oZTEvOTAzMDAzOTc2NTAyMi5wbmd8MDM1OTFhNjY2NTY1YmVlZTA1ZTQ2ODgwZjYzOWE0NDIyNjFiZWQ0YWUwYmU4NTEzNTRlNTcwNWE3ODMyMjg3OQ",
+    "model": "APPLE | 13 128GB"
   }
 ]

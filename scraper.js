@@ -17,7 +17,15 @@ export async function obtenerTelefonosTelcel() {
             return [...items].map(item => {
                 const description = item.querySelector("h2.a-product-name")?.innerText.trim() || "Sin nombre";
                 const price = item.querySelector(".cx-product-price")?.innerText.trim() || "Sin precio";
-                return { description, price };
+                const image = item.querySelector("img")?.getAttribute("src") || "";
+                const model = item.querySelector(".cx-product-model")?.innerText.trim() || "Sin modelo";
+
+                return {
+                    description,
+                    price,
+                    image,
+                    model
+                };
             });
         });
 

@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telcel - Catálogo de Teléfonos</title>
+    <title>Yesmos - Catálogo de Teléfonos</title>
     <link rel="stylesheet" href="./estilos-telefonos.css">
 </head>
 <body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
     <div class="container">
         <div class="header">
-            <h1>Telcel</h1>
-            <p>Catálogo de Teléfonos</p>
+            <h1>Yesmos.com</h1>
+            <p>Catálogo de Teléfonos de TELCEL</p>
         </div>
 
         <button class="fetch-button" onclick="fetchPhoneData()">
@@ -28,7 +34,7 @@
 
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-spinner"></div>
-        <div class="loading-text">Obteniendo datos con Puppeteer...</div>
+        <div class="loading-text">Estamos obteniendo las mejores ofertas, espera un poco...</div>
     </div>
 
     <script src="./script-telefonos-pagina.js"></script>

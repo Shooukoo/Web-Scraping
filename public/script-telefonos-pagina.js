@@ -1,81 +1,26 @@
-// Datos de ejemplo (simulando la respuesta del scraper)
-const sampleData = [
-    {
-        "description": "Galaxy Z Flip7",
-        "price": "$\n25,499.00\n$28,499.00"
-    },
-    {
-        "description": "iPhone 16e",
-        "price": "$\n13,999.00\n$14,999.00"
-    },
-    {
-        "description": "Axon 60 Lite",
-        "price": "$\n1,799.00\n$2,999.00"
-    },
-    {
-        "description": "Galaxy A06 5G",
-        "price": "$\n2,299.00\n$2,799.00"
-    },
-    {
-        "description": "Axon 40 SE",
-        "price": "$\n2,099.00\n$5,499.00"
-    },
-    {
-        "description": "Razr 50",
-        "price": "$\n10,229.00\n$16,999.00"
-    },
-    {
-        "description": "Redmi 12",
-        "price": "$\n3,129.00\n$7,499.00"
-    },
-    {
-        "description": "moto edge 60 fusion",
-        "price": "$\n7,499.00\n$8,999.00"
-    },
-    {
-        "description": "Xiaomi 14T",
-        "price": "$\n10,339.00\n$13,999.00"
-    },
-    {
-        "description": "Galaxy A56 5G",
-        "price": "$\n7,999.00\n$10,999.00"
-    },
-    {
-        "description": "Focus Pro",
-        "price": "$\n2,899.00\n$5,999.00"
-    },
-    {
-        "description": "OPPO A58",
-        "price": "$\n3,499.00\n$5,999.00"
-    },
-    {
-        "description": "Galaxy S24 FE",
-        "price": "$\n10,999.00\n$15,499.00"
-    },
-    {
-        "description": "14T Pro",
-        "price": "$\n13,339.00\n$16,999.00"
-    },
-    {
-        "description": "OPPO Reno10 256GB",
-        "price": "$\n5,499.00\n$9,999.00"
-    },
-    {
-        "description": "iPhone 13 128GB",
-        "price": "$\n10,499.00\n$12,999.00"
-    }
-];
+const WHATSAPP_NUMBER = "+523531844881"; 
 
 function parsePrices(priceString) {
-    // Dividir por saltos de línea y filtrar elementos vacíos
     const prices = priceString.split('\n').filter(p => p.trim() !== '' && p.trim() !== '$');
 
-    // El primer elemento después del $ inicial es el precio actual
-    // El segundo elemento es el precio original
     return {
-        current: prices.length > 0 ? `$${prices[0].trim()}` : '',
-        original: prices.length > 1 ? `$${prices[1].trim()}` : ''
+        current: prices.length > 0 ? prices[0].trim() : '',
+        original: prices.length > 1 ? prices[1].trim() : ''
     };
+}
+
+function adjustPrice(priceString) {
+    // Extraer el número del precio
+    const numericPrice = parseFloat(priceString.replace(/[$,]/g, ''));
+
+    // Agregar 500 pesos
+    const adjustedPrice = numericPrice + 500;
+
+    // Redondear a enteros
+    const roundedPrice = Math.round(adjustedPrice);
+
+    // Formatear con comas
+    return `$${roundedPrice.toLocaleString('es-MX')}`;
 }
 
 function calculateDiscount(current, original) {
@@ -91,6 +36,22 @@ function calculateDiscount(current, original) {
     return 0;
 }
 
+function generateWhatsAppMessage(product, adjustedPrice) {
+    const message = `¡Hola! Me interesa cotizar el siguiente teléfono:
+    *${product.description}*
+    Modelo: ${product.model}
+    Precio: ${adjustedPrice}
+    ¿Podrías darme más información sobre disponibilidad y formas de pago?
+    ¡Gracias!`;
+
+    return encodeURIComponent(message);
+}
+
+function openWhatsApp(product, adjustedPrice) {
+    const message = generateWhatsAppMessage(product, adjustedPrice);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+}
 
 function renderProducts(products) {
     const grid = document.getElementById('productsGrid');
@@ -107,20 +68,30 @@ function renderProducts(products) {
 
     grid.innerHTML = products.map((product, index) => {
         const prices = parsePrices(product.price);
+        const adjustedCurrentPrice = adjustPrice(prices.current);
+        const adjustedOriginalPrice = prices.original ? adjustPrice(prices.original) : '';
         const discount = calculateDiscount(prices.current, prices.original);
 
         return `
                     <div class="product-card" style="animation-delay: ${index * 0.1}s">
+                        <img src="${product.image}" alt="${product.description}" class="product-image" onerror="this.src='/placeholder.svg?height=120&width=120&text=Phone'">
                         <div class="product-name">${product.description}</div>
+                        <div class="product-model">${product.model}</div>
                         <div class="price-container">
-                            <span class="current-price">${prices.current}</span>
-                            ${prices.original && prices.original !== prices.current ?
-                `<span class="original-price">${prices.original}</span>` : ''
+                            <span class="current-price">${adjustedCurrentPrice}</span>
+                            ${adjustedOriginalPrice && adjustedOriginalPrice !== adjustedCurrentPrice ?
+                `<span class="original-price">${adjustedOriginalPrice}</span>` : ''
             }
                             ${discount > 0 ?
                 `<div class="discount-badge">-${discount}% OFF</div>` : ''
             }
                         </div>
+                        <button class="whatsapp-button" onclick="openWhatsApp(${JSON.stringify(product).replace(/"/g, '&quot;')}, '${adjustedCurrentPrice}')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                            </svg>
+                            Me interesa
+                        </button>
                     </div>
                 `;
     }).join('');
