@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yesmos - Catálogo de Teléfonos</title>
     <link rel="stylesheet" href="./estilos-telefonos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="floating-shapes">
@@ -19,9 +21,22 @@
             <p>Catálogo de Teléfonos de TELCEL</p>
         </div>
 
-        <button class="fetch-button" onclick="fetchPhoneData()">
-            Obtener Datos de Teléfonos
-        </button>
+        <div class="controls-section">
+            <button class="fetch-button" onclick="fetchPhoneData()">
+                Obtener Datos de Teléfonos
+            </button>
+
+            <div class="filters-section" id="filtersSection">
+                <div class="filter-group">
+                    <label class="filter-label">Filtrar por marca:</label>
+                    <select class="brand-filter" id="brandFilter" onchange="filterByBrand()">
+                        <option value="">Todas las marcas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="results-info" id="resultsInfo" style="display: none;"></div>
+        </div>
 
         <div class="products-grid" id="productsGrid">
             <!-- Los productos se cargarán aquí -->
@@ -36,7 +51,7 @@
         <div class="loading-spinner"></div>
         <div class="loading-text">Estamos obteniendo las mejores ofertas, espera un poco...</div>
     </div>
-
     <script src="./script-telefonos-pagina.js"></script>
 </body>
+
 </html>

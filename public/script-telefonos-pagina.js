@@ -1,4 +1,70 @@
-const WHATSAPP_NUMBER = "+523531844881"; 
+const WHATSAPP_NUMBER = "+523531844881";
+
+// Variables globales
+let allProducts = [];
+let filteredProducts = [];
+let availableBrands = [];
+
+function extractBrandFromModel(model) {
+    if (!model || typeof model !== 'string') return 'OTROS';
+    const parts = model.split('|');
+    return parts[0].trim().toUpperCase();
+}
+
+function getAvailableBrands(products) {
+    const brands = new Set();
+    products.forEach(product => {
+        const brand = extractBrandFromModel(product.model);
+        brands.add(brand);
+    });
+    return Array.from(brands).sort();
+}
+
+function populateBrandFilter(brands) {
+    const brandFilter = document.getElementById('brandFilter');
+    brandFilter.innerHTML = '<option value="">Todas las marcas</option>';
+
+    brands.forEach(brand => {
+        const option = document.createElement('option');
+        option.value = brand;
+        option.textContent = brand;
+        brandFilter.appendChild(option);
+    });
+}
+
+function filterByBrand() {
+    const selectedBrand = document.getElementById('brandFilter').value;
+
+    if (selectedBrand === '') {
+        filteredProducts = [...allProducts];
+    } else {
+        filteredProducts = allProducts.filter(product => {
+            const productBrand = extractBrandFromModel(product.model);
+            return productBrand === selectedBrand;
+        });
+    }
+
+    updateResultsInfo();
+    renderProducts(filteredProducts);
+}
+
+function updateResultsInfo() {
+    const resultsInfo = document.getElementById('resultsInfo');
+    const selectedBrand = document.getElementById('brandFilter').value;
+
+    if (allProducts.length === 0) {
+        resultsInfo.style.display = 'none';
+        return;
+    }
+
+    resultsInfo.style.display = 'block';
+
+    if (selectedBrand === '') {
+        resultsInfo.textContent = `Mostrando ${filteredProducts.length} productos de todas las marcas`;
+    } else {
+        resultsInfo.textContent = `Mostrando ${filteredProducts.length} productos de ${selectedBrand}`;
+    }
+}
 
 function parsePrices(priceString) {
     const prices = priceString.split('\n').filter(p => p.trim() !== '' && p.trim() !== '$');
@@ -38,11 +104,14 @@ function calculateDiscount(current, original) {
 
 function generateWhatsAppMessage(product, adjustedPrice) {
     const message = `¡Hola! Me interesa cotizar el siguiente teléfono:
-    *${product.description}*
-    Modelo: ${product.model}
-    Precio: ${adjustedPrice}
-    ¿Podrías darme más información sobre disponibilidad y formas de pago?
-    ¡Gracias!`;
+
+📱 *${product.description}*
+🏷️ Modelo: ${product.model}
+💰 Precio: ${adjustedPrice}
+
+¿Podrías darme más información sobre disponibilidad y formas de pago?
+
+¡Gracias!`;
 
     return encodeURIComponent(message);
 }
@@ -60,6 +129,7 @@ function renderProducts(products) {
     if (!products || products.length === 0) {
         noProducts.style.display = 'block';
         grid.style.display = 'none';
+        grid.classList.remove('show');
         return;
     }
 
@@ -73,7 +143,7 @@ function renderProducts(products) {
         const discount = calculateDiscount(prices.current, prices.original);
 
         return `
-                    <div class="product-card" style="animation-delay: ${index * 0.1}s">
+                    <div class="product-card" style="animation-delay: ${(index % 12) * 0.1}s">
                         <img src="${product.image}" alt="${product.description}" class="product-image" onerror="this.src='/placeholder.svg?height=120&width=120&text=Phone'">
                         <div class="product-name">${product.description}</div>
                         <div class="product-model">${product.model}</div>
@@ -105,40 +175,43 @@ function renderProducts(products) {
 async function fetchPhoneData() {
     const button = document.querySelector('.fetch-button');
     const loadingScreen = document.getElementById('loadingScreen');
-
+    const filtersSection = document.getElementById('filtersSection');
+    
     button.disabled = true;
     button.textContent = 'Obteniendo datos...';
     loadingScreen.style.display = 'flex';
-
+    
     try {
         const response = await fetch('http://localhost:3000/scrape-telcel');
-
         if (!response.ok) {
             throw new Error(`Respuesta HTTP no OK: ${response.status}`);
         }
-
         const data = await response.json();
-        console.log("✅ Datos recibidos:", data);
-
+        console.log("Datos recibidos:", data);
+        
         if (!Array.isArray(data) || data.length === 0) {
             throw new Error("No se recibieron productos válidos");
         }
-
-        renderProducts(data);
-
+        
+        allProducts = data;
+        filteredProducts = [...data];
+        availableBrands = getAvailableBrands(data);
+        populateBrandFilter(availableBrands);
+        filtersSection.classList.add('show'); 
+        updateResultsInfo();
+        renderProducts(filteredProducts);
+        
     } catch (error) {
-        console.error('❌ Error al obtener o procesar los datos:', error);
+        console.error('Error al obtener o procesar los datos:', error);
         alert('Error al obtener los datos. Revisa la consola.');
-
         // Mostrar fallback
         const grid = document.getElementById('productsGrid');
         const noProducts = document.getElementById('noProducts');
         noProducts.style.display = 'block';
         grid.style.display = 'none';
-
     } finally {
         loadingScreen.style.display = 'none';
         button.disabled = false;
-        button.textContent = '🔄 Actualizar Datos';
+        button.textContent = 'Actualizar Datos';
     }
 }
