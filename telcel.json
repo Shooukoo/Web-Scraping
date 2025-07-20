@@ -300,12 +300,6 @@
     "model": "MOTOROLA | XT2071-3"
   },
   {
-    "description": "Galaxy S22 256GB",
-    "price": "$\n16,499.00\n$21,999.00",
-    "image": "https://www.telcel.com/medias/300Wx300H-SamsungGalaxyS22RosaFrontal.png?context=bWFzdGVyfGltYWdlc3w0NzE0M3xpbWFnZS9wbmd8aW1hZ2VzL2g1YS9oODUvOTAyODA1NzU5NTkzNC5wbmd8ODQ4Mzg4NjNhMWJjZTQ1Njk5Nzg0MTA3NzY0N2VkZWM0NTczM2I5N2UxNTAxNmRmNzVhOTRhNThhMWExNTllOA",
-    "model": "SAMSUNG | S901E 256"
-  },
-  {
     "description": "moto g71 5G",
     "price": "$\n4,999.00\n$7,599.00",
     "image": "https://www.telcel.com/medias/300Wx300H-MotorolaMotoG715GVerdeFrontal.png?context=bWFzdGVyfGltYWdlc3w0NzQxMXxpbWFnZS9wbmd8aW1hZ2VzL2g5NS9oOGIvOTAyODA0ODA2MDQ0Ni5wbmd8YTIzN2MzYjc4NzA2OTM0NDZlYzI3ZTE0NzY1YzQ5ZTkyZDFjMmNkNTNmZmFjYmVjMWU0YjExMTZhM2I2YTk5MA",
@@ -1020,12 +1014,6 @@
     "model": "APPLE | 15 PL256"
   },
   {
-    "description": "iPhone 15 128GB",
-    "price": "$\n17,499.00",
-    "image": "https://www.telcel.com/medias/300Wx300H-iPhone15YellowDual.png?context=bWFzdGVyfGltYWdlc3w3MzE1NXxpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oYjgvOTEyNzMzNzgyMDE5MC5wbmd8NjQ3YjcyOGM3ZjExMTg2ZWNkOThiYzNlNzQxOGY5NWIwMmU2YTk4MDU1NTE5MDUzZjRiMTJjNDA2ZTRhODJkNw",
-    "model": "APPLE | 15 128"
-  },
-  {
     "description": "Y36 256GB",
     "price": "$\n5,999.00\n$6,499.00",
     "image": "https://www.telcel.com/medias/300Wx300H-vivoY16NegroFrontal.png?context=bWFzdGVyfGltYWdlc3wzMjg5MnxpbWFnZS9wbmd8aW1hZ2VzL2g1Mi9oN2IvOTAyODczMjkxMTY0Ni5wbmd8YTU2ODQwOTNjN2JlNGZiN2VmODNkOTdjMzkyOTliMjAzZTNhNTc4MWMzNTdlYWU0MTlkMGY1NjRiZWUzYzA4Nw",
@@ -1272,12 +1260,6 @@
     "model": "APPLE | 16 256"
   },
   {
-    "description": "iPhone 16 512GB",
-    "price": "$\n27,499.00",
-    "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16-BlancoDual.jpeg?context=bWFzdGVyfGltYWdlc3wxNjA3NXxpbWFnZS9qcGVnfGltYWdlcy9oNDAvaGZiLzkxMjczMjg4NzQ1MjYuanBnfDY3ZTAxYWE4OTA1ZWZkYTNjN2Y0NDA0ZGIwNjA2ZDJkZWYwNGQyNGEzNGZjNDlmYWM2ZWVjY2JmM2U1ZTE3NGY",
-    "model": "APPLE | 16 512"
-  },
-  {
     "description": "iPhone 16 Plus 256GB",
     "price": "$\n25,499.00",
     "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16-Plus-RosaDual.jpeg?context=bWFzdGVyfGltYWdlc3wxOTY1OXxpbWFnZS9qcGVnfGltYWdlcy9oNzUvaDg0LzkxMjczMjg5NzI4MzAuanBnfDk0NzE4YzBlNDA3NDU3YTdkMjM5MTNmNDYwMjE4NDE3NmZiZjFhMzRlMzNlMTZkNGQ4ZDVhNTY1MmE4NzJkZmQ",
@@ -1320,12 +1302,6 @@
     "model": "APPLE | 16 PL512"
   },
   {
-    "description": "iPhone 16 Pro 256GB",
-    "price": "$\n28,499.00",
-    "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16-Pro-Titaniodel-desiertoDual.jpeg?context=bWFzdGVyfGltYWdlc3wyNDYwMXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaGUyLzkxMjczMjg2NDUxNTAuanBnfGRjYTlkOGUzNWQ3MTI5ODYzOWIxMjM5MTc1YTA3NTdjYmQwZjFlM2FkZWY2ZmM3Yzc0YmQyYjQ2NzQ2ZGViOWU",
-    "model": "APPLE | 16 PR256"
-  },
-  {
     "description": "iPhone 16 Pro 1TB",
     "price": "$\n38,499.00",
     "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16-Pro-Titaniodel-desiertoDual.jpeg?context=bWFzdGVyfGltYWdlc3wyNDYwMXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaGUyLzkxMjczMjg2NDUxNTAuanBnfGRjYTlkOGUzNWQ3MTI5ODYzOWIxMjM5MTc1YTA3NTdjYmQwZjFlM2FkZWY2ZmM3Yzc0YmQyYjQ2NzQ2ZGViOWU",
@@ -1360,6 +1336,12 @@
     "price": "$\n35,999.00",
     "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16-Pro-Max-Titanio-del-desiertoDual.jpeg?context=bWFzdGVyfGltYWdlc3wyMDQ0NXxpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDI4LzkxMjczMjg2MTIzODIuanBnfGVhYzQxZGQwOWM0YTc5MWFlM2Y4MTgwMGY1NGZkOTkxNWZlMjRmN2NlMjFiNWFkODJhNDQyMDExNjNjOWRhNzE",
     "model": "APPLE | 16 PM512"
+  },
+  {
+    "description": "iPhone 16 Pro Max 1TB",
+    "price": "$\n40,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-iPhone-16-Pro-Max-Titanio-del-desiertoDual.jpeg?context=bWFzdGVyfGltYWdlc3wyMDQ0NXxpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDI4LzkxMjczMjg2MTIzODIuanBnfGVhYzQxZGQwOWM0YTc5MWFlM2Y4MTgwMGY1NGZkOTkxNWZlMjRmN2NlMjFiNWFkODJhNDQyMDExNjNjOWRhNzE",
+    "model": "APPLE | 16 PM1TB"
   },
   {
     "description": "iPhone 16 Pro Max 1TB",
@@ -1438,5 +1420,23 @@
     "price": "$\n5,999.00\n$7,999.00",
     "image": "https://www.telcel.com/medias/300Wx300H-realme115GNegroFrontal.png?context=bWFzdGVyfGltYWdlc3w0NDE5NXxpbWFnZS9wbmd8aW1hZ2VzL2hjNS9oMTQvOTA3MDY2NjA1NTcxMC5wbmd8M2QxYzIyNDZiMWQ2YTk0NDE0NDYyZGJiNWI5ZjkzYmExNjhlMTI5MDFhMjA1MWM2N2I1YjY1NWM3NTY1MGQzOA",
     "model": "REALME | RMX3780"
+  },
+  {
+    "description": "A06",
+    "price": "$\n1,999.00\n$2,599.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-SamsungGalaxyA06NegroFrontal.jpeg?context=bWFzdGVyfGltYWdlc3wyNzI3OHxpbWFnZS9qcGVnfGltYWdlcy9oNjYvaDk4LzkwNjk1OTA3NzM3OTAuanBnfGJjYTI2MTg5MjE2YTVhNTAzOGVlNjBiN2JlYjdhODMyZTA2YWNkNjgxY2JlMDM4Mzk3MDRlMGRlMGJlZWU2YmY",
+    "model": "SAMSUNG | SM-A065M"
+  },
+  {
+    "description": "Xiaomi 14T",
+    "price": "$\n12,999.00\n$13,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-Xiaomi14TNegroBundleC.jpeg?context=bWFzdGVyfGltYWdlc3wzNDY1MXxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaGI5LzkxMjkwMjYzMjI0NjIuanBnfDA5NzFjZDljOTg0NTgxNWQwZGI2MTBlZTg4YjkyNjFhYjBmZjU3MDRiYTcwNTA2ZGY1NDQ2ZDcwMjgxMDQxYjE",
+    "model": "XIAOMI | 2406APNFAG"
+  },
+  {
+    "description": "Xiaomi 14T",
+    "price": "$\n12,999.00\n$13,999.00",
+    "image": "https://www.telcel.com/medias/300Wx300H-Xiaomi14TVerdeBundleC.jpeg?context=bWFzdGVyfGltYWdlc3wzOTEwNHxpbWFnZS9qcGVnfGltYWdlcy9oNzEvaDc3LzkxMjkwMjYxMjU4NTQuanBnfGRiODgwN2E0NjgyZmRjYWJhZDYxYWQ2Y2Y5ZGZmZmRkZTMxOGUxMDVkNmE1NWVjMTIwYjJiYTM5ZjMyZDJkY2Y",
+    "model": "XIAOMI | 2406APNFAG"
   }
 ]
